@@ -7,6 +7,10 @@
 - Fourth Ubuntu (the one most command linux OS and favored by all the AI agent)
 - Last but not the least (Window MS Dos for practising)
 
-## I opporate all these server from my Mac M1
+## I operate all these server from my Mac M1
+```
+Since Apple is truly expensive but the battery is remarkable and long lasting for hours and hours.
+Therefore I user Mac as my main so that I don't have to bother about charging again and again and having trouble about carry charger all the time with me
+```
 
 
