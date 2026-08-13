@@ -1,0 +1,10 @@
+---
+- name: Update all FreeBSD packages
+  hosts: freebsd
+  become: true
+  tasks:
+    - name: Upgrade all installed packages
+      community.general.pkgng:
+          name: '*'
+          state: latest
+
