@@ -1,7 +1,15 @@
----
-- hosts: all
-  become: true
-  tasks:
-    - name: Install fastfetch
-      ansible.builtin.raw: pkg install -y fastfetch
+---                                                                         
+                                                                              
+ - name: update all the pacakges                                            
+   hosts: all                                                               
+   become: true                                                             
+   tasks:                                                                   
+     - name: update freebsd                                                 
+       community.general.pkgng:                                             
+         name: '*'                                                          
+         state: latest                                                      
+                                                                              
+                                                                              
+                                                                              
+                                                                              
 
