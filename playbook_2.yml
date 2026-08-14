@@ -1,0 +1,15 @@
+---
+
+ - name: update all the pacakges
+   hosts: all
+   become: true                                                              
+   tasks:                                                                    
+     - name: update freebsd
+       community.general.pkgng: 
+         name: '*'
+         state: latest
+         update: true
+                                                                              
+
+
+
