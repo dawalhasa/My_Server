@@ -116,14 +116,14 @@ When I use playbook; this syntax should prefix with ansible.builtin.
 This community.general dependence is needed when we write playbook related with FreeBSD. FreeBSD pkg command don't really work well when we have to write a higher level playbook. I need some ansible provided syntax and rules to follow. Exact like the community.general dependences work with these cases like instead of pkg ansible use pkgng with prefix dependence that ansible galaxy provide as community.general.pkgng:.
 ```
 
-## Problem occurs with python installation and solution
+## Problem occurs related python installation
 
 ```
 [WARNING]: Discovered python interpreter at /usr/local/bin
 ```
 - Solution:
 
-Add the following line in your ansible configuration file
+Add following line in your ansible configuration file
 
 ```
 interpreter_python = auto_silent
