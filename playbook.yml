@@ -2,9 +2,6 @@
 - hosts: all
   become: true
   tasks:
-
-  - name: Upgrade all installed packages
-      community.general.pkgng:
-        name: '*'
-        state: latest
+    - name: Install fastfetch
+      ansible.builtin.raw: pkg install -y fastfetch
 
