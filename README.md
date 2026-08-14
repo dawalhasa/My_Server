@@ -27,3 +27,7 @@ When I use playbook; this syntax should prefix with ansible.builtin.
 
 1. ansible-galaxy collection install community.general
 2. ansible-galaxy collection install ansible.posix
+
+```
+This community.general dependence is needed when we write playbook related with FreeBSD. FreeBSD pkg command don't really work well when we have to write a higher level playbook. I need some ansible provided syntax and rules to follow. Exact like the community.general dependences work with these cases like instead of pkg ansible use pkgng with prefix dependence that ansible galaxy provide as community.general.pkgng:.
+```
