@@ -4,31 +4,31 @@
 
 ```
 I have five defferent server and every ever deffert one from other.
-I have FreeBSD (unix like), Red-Hat(linux fedora basic destro), Kali Linux (debain base linux destro), Ubuntu (also debain base linux desktro) and last MicroSoft-OS (Ms Dos).
-There according to each OS and their package usage; the installation process also differ.
+i have freebsd (unix like), rehl(linux fedora basic destro), kalilinux (debain base linux destro), ubuntu (also debain base linux desktro) and last microsoftOS (ms dos).
+there according to each os and their package usage; the installation process also different.
 ```
 
-Example One
+example one
 - pkg install git gh
 
-Example Two
+example two
 - dnf install git gh
 
-Example Three
+example three
 - apt install git gh
 
-Example Fourth
+example fourth
 - apt install git gh
 
-Example Fifth
-- Install-Module -Name git gh or winget install git gh
+example fifth
+- install-module -name git gh or winget install git gh
 
 ```
-After installation is complete. 
-Configure the git version control:
+after installation is complete. 
+configure the git version control:
 ```
 
-- First One
+- first one
 ```
     git config --global user.name "$USER"
     git config --global user.email "$USER@gmail.com"
@@ -36,18 +36,28 @@ Configure the git version control:
 ## Few basic git command to manage the fiel versioning:
 - First:
 ```
-    git add $FILES
+    git status
 ```
 - Second:
 ```
-    git commit -m "$MESSAGE"
+    git add $FILES
 ```
 - Thirde:
 ```
+    git commit -m "$MESSAGE"
+```
+- Fourth:
+```
+    git status
+```
+- Fifth:
+```
     git push origin master
 ```
+
 I only use these three git command and sometime some alias too.
 The most intersting and trick thing all will complete with gh cli
+
 
 ## Few basic gh cli command
 - First:
