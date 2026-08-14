@@ -1,5 +1,79 @@
 # Server Project
 
+## In this chapter first I'm introduce how I git and github cli tools
+
+```
+I have five defferent server and every ever deffert one from other.
+I have FreeBSD (unix like), Red Hat(linux fedora basic destro), Kali Linux (debain base linux destro), Ubunt (also debain base linux desktro) and last MicroSoft OS (Ms Dos).
+There according to each OS and their package usage; the installation process also differ.
+```
+
+Example One
+- pkg install git gh
+
+Example Two
+- dnf install git gh
+
+Example Three
+- apt install git gh
+
+Example Fourth
+- apt install git gh
+
+Example Fifth
+- Install-Module -Name git gh or winget install git gh
+
+```
+After installation is complete. 
+Configure the git version control:
+```
+
+- First One
+```
+    git config --global user.name "$USER"
+    git config --global user.email "$USER@gmail.com"
+```
+## Few basic git command to manage the fiel versioning:
+- First:
+```
+    git add $FILES
+```
+- Second:
+```
+    git commit -m "$MESSAGE"
+```
+- Thirde:
+```
+    git push origin master
+```
+I only use these three git command and sometime some alias too.
+The most intersting and trick thing all will complete with gh cli
+
+## Few basic gh cli command
+- First:
+```
+    gh auth login
+```
+- Second
+```
+    gh repo list
+```
+- Thirde
+```
+    gh repo clone
+```
+- Fourth
+```
+    gh repo view
+```
+- Fifth
+```
+    gh repo read-dir
+```
+
+---
+
+
 ## I have five defferent servers.
 - First FreeBSD (considered best server)
 - Second Red Hat (interprisist most favored and secured OS)
@@ -31,3 +105,4 @@ When I use playbook; this syntax should prefix with ansible.builtin.
 ```
 This community.general dependence is needed when we write playbook related with FreeBSD. FreeBSD pkg command don't really work well when we have to write a higher level playbook. I need some ansible provided syntax and rules to follow. Exact like the community.general dependences work with these cases like instead of pkg ansible use pkgng with prefix dependence that ansible galaxy provide as community.general.pkgng:.
 ```
+
