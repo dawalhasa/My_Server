@@ -1,0 +1,34 @@
+
+                                                                              
+  ---                                                                         
+                                                                              
+    pre_tasks:                                                                
+      - name: Bootstrap Python on FreeBSD                                     
+        raw: pkg install -y python3                                           
+        changed_when: false                                                   
+                                                                              
+   - name: update all the pacakges                                            
+     hosts: all                                                               
+     become: true                                                             
+     vars:                                                                    
+       # 💡 Points Ansible to the correct package binary path on FreeBSD      
+       ansible_python_interpreter: /usr/local/bin/python3                     
+                                                                              
+     # 🛠️ This runs BEFORE standard modules execute, allowing Python to       
+  install first                                                               
+     pre_tasks:                                                               
+       - name: Bootstrap Python on FreeBSD                                    
+         raw: pkg install -y python3                                          
+         changed_when: false                                                  
+                                                                              
+     tasks:                                                                   
+       - name: update freebsd                                                 
+         community.general.pkgng:                                             
+           name: '*'                                                          
+           state: latest                                                      
+           update: true                                                       
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+

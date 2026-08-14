@@ -1,4 +1,4 @@
-# My_Server
+# Server Project
 
 ## I have five defferent servers.
 - First FreeBSD (considered best server)
@@ -20,5 +20,10 @@ Therefore I prefer Mac as my main server so that I don't have to bother about ch
 
 ```
 This raw module is very instersting. Not like other OS, freebsd have their own some special syntax like this raw module.
-When I run playbook this syntax should prefix with ansible.builtin.
+When I use playbook; this syntax should prefix with ansible.builtin.
 ```
+
+## There are few dependencies to install from ansible-galaxy collection
+
+1. ansible-galaxy collection install community.general
+2. ansible-galaxy collection install ansible.posix
