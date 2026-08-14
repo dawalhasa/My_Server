@@ -4,7 +4,7 @@
 
 ```
 I have five defferent server and every ever deffert one from other.
-I have FreeBSD (unix like), Red Hat(linux fedora basic destro), Kali Linux (debain base linux destro), Ubunt (also debain base linux desktro) and last MicroSoft OS (Ms Dos).
+I have FreeBSD (unix like), Red-Hat(linux fedora basic destro), Kali Linux (debain base linux destro), Ubuntu (also debain base linux desktro) and last MicroSoft-OS (Ms Dos).
 There according to each OS and their package usage; the installation process also differ.
 ```
 
