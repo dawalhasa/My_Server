@@ -1,14 +1,14 @@
 ---                                                                         
                                                                               
- - name: update all the pacakges                                            
+ - name: Update FreeBSD
    hosts: all                                                               
    become: true                                                             
    tasks:                                                                   
-     - name: update freebsd                                                 
-       community.general.pkgng:                                             
+     - name: Update all the Packages
+       pkgng:                                             
          name: '*'                                                          
          state: latest                                                      
-                                                                              
+       when: ansible_facts.distribution == "FreeBSD"                                                                       
                                                                               
                                                                               
                                                                               

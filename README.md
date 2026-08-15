@@ -4,7 +4,7 @@
 
 ```
 I have five defferent server and every ever deffert one from other.
-i have freebsd (unix like), rehl(linux fedora basic destro), kalilinux (debain base linux destro), ubuntu (also debain base linux desktro) and last microsoftOS (ms dos).
+i have freebsd (unix like), rehl(linux fedora basic distro), kalilinux (debain base linux distro), ubuntu (also debain base linux distro) and last microsoftOS (ms dos).
 there according to each os and their package usage; the installation process also different.
 ```
 
@@ -127,5 +127,11 @@ Add following line in your ansible configuration file
 
 ```
 interpreter_python = auto_silent
+```
+
+## Conditional operation syntax in ansible
+
+```
+when: ansible_fact.distribution == "$OS"
 ```
 
